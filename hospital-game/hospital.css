@@ -1,0 +1,1268 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(https://media.istockphoto.com/id/1304410377/video/city-road-background-pattern-city-skyline-road-clouds-sky-trees-4k-video.jpg?s=640x640&k=20&c=GaijCCJijF02TjfLB8UpuABqsUL1-TKs4NSXRfaGRLM=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+}
+
+.build1 {
+    zoom: 90%;
+    position: relative;
+    width: 1100px;
+    height: 500px;
+    border: 1px solid black;
+    left: 120px;
+    top: 100px;
+    background-color: #D1D0CB;
+  
+   
+
+}
+.garage{
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    bottom:0;
+    left: 20px;
+    border: 2px solid #0c0c0c;
+
+}
+.garage::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(rgb(212, 209, 206), #5e5c5b 10%, rgb(6, 6, 6) 10%);
+    border-bottom: rgb(42, 165, 140) solid 4px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    transition: height 0.9s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.garage:hover::before{
+    height: 2%;
+}
+
+.batton {
+
+    position: absolute;
+    width: 1120px;
+    height: 20px;
+    background-color: #07D3BA;
+    top: -20px;
+    left: -10px;
+    border-radius: 5px;
+
+}
+
+.batton3 {
+
+    position: absolute;
+    width: 1120px;
+    height: 20px;
+    background-color: #07D3BA;
+    bottom: -16px;
+    left: -170px;
+    border-radius: 5px;
+    z-index: 6;
+
+}
+
+.batton2 {
+    position: absolute;
+    width: 420px;
+    height: 20px;
+    background-color: #07D3BA;
+    left: -10px;
+    top: -5px;
+    border-radius: 5px;
+}
+
+.sbatton {
+    position: absolute;
+    width: 330px;
+    height: 20px;
+    background-color: #07D3BA;
+    left: 36px;
+    top: 380px;
+    border-radius: 5px;
+    z-index: 4;
+
+}
+
+.build2 {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    border: 0.5px solid black;
+    top: -100px;
+    left: 160px;
+    background-color: #EEEEE5;
+    z-index: 3;
+}
+
+.deco1L {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 220px;
+    left: 0;
+
+}
+
+.deco2L {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 260px;
+    left: 0;
+
+}
+
+.deco3L {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 300px;
+    left: 0;
+
+}
+
+.deco3R {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 300px;
+    right: 0;
+
+}
+
+.deco2R {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 260px;
+    right: 0;
+
+}
+
+.deco1R {
+    position: absolute;
+    border: 0.3px solid blanchedalmond;
+    background-color: #07D3BA;
+    width: 20px;
+    height: 18px;
+    top: 220px;
+    right: 0;
+
+
+}
+
+.door {
+    position: absolute;
+    border: 8px solid #07D3BA;
+    border-bottom: none;
+    width: 300px;
+    height: 200px;
+    z-index: 6;
+    bottom: 0;
+    left: 50px;
+    border-radius: 5px;
+    background-image: url(doctors.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    background-size: 100%;
+
+}
+
+
+.door-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    z-index: 4;
+    border-radius: 1px;
+    background: rgba(208, 224, 250, 0.89);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 8px solid #07D3BA;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    transition: 5s;
+}
+
+.door:hover .door-left {
+    width: 0;
+
+}
+
+.door-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    z-index: 4;
+    border-radius: 1px;
+    background: rgba(208, 224, 250, 0.89);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 8px solid #07D3BA;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    transition: 5s;
+}
+
+.door:hover .door-right {
+    width: 0;
+}
+
+.name {
+    position: absolute;
+    color: #d30711;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    top: 10px;
+    left: 90px;
+    letter-spacing: 3px;
+
+}
+
+
+.logo {
+    position: absolute;
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: shinetrans 2s ease-in-out infinite ;
+}
+@keyframes shinetrans {
+
+0%{box-shadow: 0px 0px 8px rgb(255, 0, 0) ;}
+50%{box-shadow: 0px 0px 8px rgba(255, 0, 0, 0) ;}
+0%{box-shadow: 0px 0px 8px rgb(255, 0, 0) ;}
+}
+
+
+
+.logo1 {
+    position: absolute;
+    border: 5px solid rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: red;
+    animation: shinetrans 2s ease-in-out infinite ;
+}
+
+.plus1 {
+    position: absolute;
+    width: 61px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    z-index: 5;
+    top: 40%;
+    left: 14%;
+    border-radius: 2px;
+    animation: shinetrans 2s ease-in-out infinite ;
+}
+
+.plus2 {
+    position: absolute;
+    width: 15px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    z-index: 5;
+    top: 13%;
+    left: 42%;
+    border-radius: 2px;
+    animation: shinetrans 2s ease-in-out infinite ;
+}
+.shadowl {
+    position: absolute;
+    width: 9px;
+    height: 25px;
+    background-color: azure;
+    opacity: 0.3;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 7px;
+
+}
+
+.shadowR {
+    position: absolute;
+    width: 9px;
+    height: 25px;
+    background-color: azure;
+    opacity: 0.3;
+    transform: rotate(-45deg);
+    top: 50px;
+    left: 8px;
+}
+
+img{
+    position: absolute;
+    width: 70px;
+    height: 90px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.window5 {
+    position: relative;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 380px;
+    left: 580px;    
+}
+
+.left5 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+
+
+.right5 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+
+
+.window6 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 260px;
+    left: 580px;
+   
+
+}
+
+.left6 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+
+.right6 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.89);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.9);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+
+
+.window7 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 140px;
+    left: 580px;
+   
+}
+
+.left7 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+
+.right7 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+
+.window8 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 20px;
+    left: 580px;
+    
+}
+
+.left8 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+img {
+    height: 80%; 
+    width: 80%;
+
+}
+.win.ative{
+    position: fixed;
+      height: 112vh;
+      width: 50vw;
+      z-index: 5;
+      background-color:#D1D0CB;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+}
+
+.win.ative .winleft{
+    transform: rotateY(140deg);
+    width: 45vw;
+    height: 112vh;
+ 
+}
+
+.win.ative .winright{
+    transform: rotateY(-140deg);
+    width: 45vw;
+    height: 112vh;
+}
+
+.right8 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+.window9 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 20px;
+    left: 680px;
+    
+}
+
+.left9 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+
+.right9 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+
+.window10 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 140px;
+    left: 680px;
+    
+}
+
+.left10 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+
+.right10 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+
+.window11 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 260px;
+    left: 680px;
+    
+}
+
+.left11 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right11 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window12 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 380px;
+    left: 680px;
+    
+}
+
+.left12 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right12 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window13 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 20px;
+    left: 780px;
+    
+}
+
+.left13 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right13 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window14 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 140px;
+    left: 780px;
+    
+}
+
+.left14 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right14 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window15 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 260px;
+    left: 780px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    background-size: 100%;
+}
+
+.left15 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right15 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+.window16 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 380px;
+    left: 780px;
+   
+
+}
+
+.left16 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right16 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+.window17 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 20px;
+    left: 880px;
+    
+}
+
+.left17 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+.right17 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window18 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 140px;
+    left: 880px;
+    
+}
+
+.left18 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right18 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window19 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 260px;
+    left: 880px;
+    
+}
+
+.left19 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right19 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window20 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 380px;
+    left: 880px;
+   
+}
+
+.left20 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right20 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window21 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 20px;
+    left: 980px;
+   
+}
+
+.left21 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+
+.right21 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window22 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 140px;
+    left: 980px;
+    
+}
+
+.left22 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right22 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
+.window23 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 260px;
+    left: 980px;
+   
+}
+
+.left23 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+
+.right23 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+.window24 {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px solid rgba(207, 243, 244, 0.893);
+    top: 380px;
+    left: 980px;
+    
+    
+}
+
+.left24 {
+    position: absolute;
+    width:40px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: left;
+}
+.right24 {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+    border-radius: 2px;
+    background: rgba(208, 224, 250, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 146, 197, 0.89);
+    transition: 0.6s;
+    transform-origin: right;
+
+}
+
+
